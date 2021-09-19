@@ -22,7 +22,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🌺𝗙𝗶𝗻𝗱𝗶𝗻𝗴 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 ⭐ 𝗙𝗼𝗿𝗺 𝗦𝗲𝗿𝘃𝗲𝗿...')
+    m = message.reply('🌺𝚁𝚄𝙺𝙾 𝚉𝙰𝚁𝙰 𝚂𝙰𝙱𝙰𝚁 𝙺𝙰𝚁𝙾 ⭐ 𝚂𝙾𝙽𝙶 𝙳𝙷𝚄𝙽𝙳𝙷 𝚁𝙰𝙷𝙰 𝙷𝚄 ...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -41,17 +41,17 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "🌋𝗦𝗼𝗻𝗴 𝗡𝗼𝘁 🌹𝗙𝗼𝘂𝗻𝗱."
+            "🌋𝐒𝐎𝐍𝐆 𝐍𝐀𝐇𝐈 𝐌𝐈𝐋𝐀 🥺."
         )
         print(str(e))
         return
-    m.edit("𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗦𝗼𝗻𝗴 🌺 𝗙𝗿𝗼𝗺 𝗦𝗲𝗿𝘃𝗲𝗿...")
+    m.edit("𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗦𝗼𝗻𝗴 🌺 𝐅𝐑𝐎𝐌 𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**🎵 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆 :- ✨ @Prayagraj_Op ❤️☝️**'
+        rep = '**🎵 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆 :- ✨@BROKEN_KING_HERE  ❤️☝️**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -59,7 +59,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit('🌸Rythm 𝗡𝗼𝘁 𝗚𝗶𝘃𝗲 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻 𝗙𝗼𝗿 𝗚𝗶𝘃𝗶𝗻𝗴 𝗬𝗼𝘂 💿 𝗦𝗼𝗻𝗴 𝗙𝗿𝗼𝗺 𝗦𝗲𝗿𝘃𝗲𝗿')
+        m.edit('🌸 𝐀𝐁𝐇𝐈 𝗡𝗼𝘁 𝗚𝗶𝘃𝗲 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻 𝗙𝗼𝗿 𝗚𝗶𝘃𝗶𝗻𝗴 𝗬𝗼u 💿 𝗦𝗼𝗻𝗴 𝐅𝐑𝐎𝐌 𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑')
         print(e)
 
     try:
