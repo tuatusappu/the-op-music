@@ -198,7 +198,7 @@ async def play(_, message: Message):
             )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/426a28997eee775afabf9.jpg"
+            thumb_name = "https://telegra.ph/file/e00d366f2291755427eb8.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -206,7 +206,7 @@ async def play(_, message: Message):
                         [
                             InlineKeyboardButton(
                             text="❰ 𝗚𝗿𝗼𝘂𝗽 😎❤️🤟 ❱",
-                            url="https://t.me/xrebirth666"),
+                            url="https://t.me/BROKEN_KING_HERE"),
 
                         ]
                     ]
