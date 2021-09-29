@@ -44,7 +44,7 @@ async def resume(_, message: Message):
 @authorized_users_only
 async def stop(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗜𝘀 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 ✨")
+        await message.reply_text("❗𝐑𝐎𝐂𝐊𝐒𝐓𝐀𝐑 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗜𝘀 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 ✨")
     else:
         try:
             callsmusic.queues.clear(message.chat.id)
@@ -52,7 +52,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("❌𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗦𝘁𝗼𝗽 🛑 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 ✨")
+        await message.reply_text("❌𝐑𝐎𝐂𝐊𝐒𝐓𝐀𝐑 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗦𝘁𝗼𝗽 🛑 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 ✨")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -72,4 +72,4 @@ async def skip(_, message: Message):
                 callsmusic.queues.get(message.chat.id)["file"]
             )
 
-        await message.reply_text("➡️ 𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑 😗𝗦𝗸𝗶𝗽 💫 𝗧𝗵𝗲 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 😊 𝗦𝗼𝗻𝗴 ❤️🤟")
+        await message.reply_text("➡️ 𝐑𝐎𝐂𝐊𝐒𝐓𝐀𝐑 𝐒𝐄𝐑𝐕𝐄𝐑 😗𝗦𝗸𝗶𝗽 💫 𝗧𝗵𝗲 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 😊 𝗦𝗼𝗻𝗴 ❤️🤟")
