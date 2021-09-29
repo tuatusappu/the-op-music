@@ -18,10 +18,10 @@ async def pause(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'paused'
     ):
-        await message.reply_text("❗𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗜𝘀 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✨")
+        await message.reply_text("❗𝗥𝗢𝗖𝗞𝗦𝗧𝗔𝗥 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗜𝘀 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✨")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("▶️ 𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗣𝗮𝘂𝘀𝗲𝗱 😔🤟")
+        await message.reply_text("▶️ 𝗥𝗢𝗖𝗞𝗦𝗧𝗔𝗥 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗣𝗮𝘂𝘀𝗲𝗱 😔🤟")
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -33,10 +33,10 @@ async def resume(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'playing'
     ):
-        await message.reply_text("❗𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗜𝘀 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✨")
+        await message.reply_tex("❗𝗥𝗢𝗖𝗞𝗦𝗧𝗔𝗥 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗜𝘀 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✨")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text("⏸ 𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗥𝗲𝘀𝘂𝗺𝗲𝗱 ❤️🤟")
+        await message.reply_text("⏸ 𝗥𝗢𝗖𝗞𝗦𝗧𝗔𝗥 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗥𝗲𝘀𝘂𝗺𝗲𝗱 ❤️🤟")
 
 
 @Client.on_message(command("end") & other_filters)
