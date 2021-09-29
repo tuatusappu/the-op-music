@@ -22,7 +22,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🌺𝚁𝚄𝙺𝙾 𝚉𝙰𝚁𝙰 𝚂𝙰𝙱𝙰𝚁 𝙺𝙰𝚁𝙾 ⭐ 𝚂𝙾𝙽𝙶 𝙳𝙷𝚄𝙽𝙳𝙷 𝚁𝙰𝙷𝙰 𝙷𝚄 ...')
+    m = message.reply('🌺𝐑𝐔𝐊𝐎 𝐉𝐀𝐑𝐀 𝐒𝐀𝐁𝐀𝐑 𝐊𝐑𝐎 𝐁𝐂⭐ 𝐃𝐇𝐔𝐍𝐃 𝐑𝐇𝐀 𝐇𝐔 ...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -45,7 +45,7 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗦𝗼𝗻𝗴 🌺 𝐅𝐑𝐎𝐌 𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑...")
+    m.edit("𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗦𝗼𝗻𝗴 🌺 𝐅𝐑𝐎𝐌 𝐑𝐎𝐂𝐊𝐒𝐓𝐀𝐑 𝐒𝐄𝐑𝐕𝐄𝐑...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -59,7 +59,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit('🌸 𝐀𝐁𝐇𝐈 𝗡𝗼𝘁 𝗚𝗶𝘃𝗲 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻 𝗙𝗼𝗿 𝗚𝗶𝘃𝗶𝗻𝗴 𝗬𝗼u 💿 𝗦𝗼𝗻𝗴 𝐅𝐑𝐎𝐌 𝗥𝗢𝗖𝗞𝗦𝗧𝗔𝗥 𝐒𝐄𝐑𝐕𝐄𝐑')
+        m.edit('🌸 𝐑𝐎𝐂𝐊𝐒𝐓𝐀𝐑 𝗡𝗼𝘁 𝗚𝗶𝘃𝗲 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻 𝗙𝗼𝗿 𝗚𝗶𝘃𝗶𝗻𝗴 𝗬𝗼u 💿 𝗦𝗼𝗻𝗴 𝐅𝐑𝐎𝐌 𝗥𝗢𝗖𝗞𝗦𝗧𝗔𝗥 𝐒𝐄𝐑𝐕𝐄𝐑')
         print(e)
 
     try:
