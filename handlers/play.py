@@ -91,7 +91,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝚁𝚄𝙺𝙾 𝚉𝙰𝚁𝙰 𝚂𝙰𝙱𝙰𝚁 𝙺𝙰𝚁𝙾 ⭐ 𝚂𝙾𝙽𝙶 𝙳𝙷𝚄𝙽𝙳𝙷 𝚁𝙰𝙷𝙰 𝙷𝚄🎶🤟**")
+    lel = await message.reply("🔄 **𝗥𝗢𝗖𝗞𝗦𝗧𝗔𝗥 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝚁𝚄𝙺𝙾 𝚉𝙰𝚁𝙰 𝚂𝙰𝙱𝙰𝚁 𝙺𝙰𝚁𝙾 ⭐ 𝚂𝙾𝙽𝙶 𝙳𝙷𝚄𝙽𝙳𝙷 𝚁𝙰𝙷𝙰 𝙷𝚄🎶🤟**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -117,7 +117,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**ABHI 𝗠𝘂𝘀𝗶𝗰 🎶 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 😎 𝗝𝗼𝗶𝗻𝗲𝗱 𝗧𝗵𝗶𝘀 😉 𝗚𝗿𝘂𝗼𝗽 𝗙𝗼𝗿 𝗣𝗹𝗮𝘆 𝗠𝘂𝘀𝗶𝗰 ❤️🤟**")
+                        message.chat.id, "**𝗙𝗹𝗼𝗿𝗲𝗻𝘇𝗮 𝗠𝘂𝘀𝗶𝗰 🎶 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 😎 𝗝𝗼𝗶𝗻𝗲𝗱 𝗧𝗵𝗶𝘀 😉 𝗚𝗿𝘂𝗼𝗽 𝗙𝗼𝗿 𝗣𝗹𝗮𝘆 𝗠𝘂𝘀𝗶𝗰 ❤️🤟**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -190,7 +190,7 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton(
                             text="❰ 𝗚𝗿𝗼𝘂𝗽 😎❤️🤟 ❱",
-                            url="https://t.me/ABHI_NETWORK"),
+                            url="https://t.me/Florenza_support"),
                         
 
                     ]
@@ -206,7 +206,7 @@ async def play(_, message: Message):
                         [
                             InlineKeyboardButton(
                             text="❰ 𝗚𝗿𝗼𝘂𝗽 😎❤️🤟 ❱",
-                            url="https://t.me/ABHI_NETWORK"),
+                            url="https://t.me/FLORENZA_SUPPORT"),
 
                         ]
                     ]
@@ -257,7 +257,7 @@ async def play(_, message: Message):
                       
                         InlineKeyboardButton(
                             text="❰ 𝗚𝗿𝗼𝘂𝗽 😎❤️🤟 ❱",
-                            url="https://t.me/ABHI_NETWORK"),
+                            url="https://t.me/FLORENZA_SUPPORT"),
 
                     ]
                 ]
@@ -285,7 +285,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗔𝘁 🤟 `{}`...**".format(
+        caption="**𝗥𝗢𝗖𝗞𝗦𝗧𝗔𝗥 𝐒𝐄𝐑𝐕𝐄𝐑 😗 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗔𝘁 🤟 `{}`...**".format(
         message.chat.title
         ), )
         os.remove("final.png")
